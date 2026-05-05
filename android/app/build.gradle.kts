@@ -41,7 +41,21 @@ android {
         multiDexEnabled = true
     }
 
-        signingConfigs {
+    flavorDimensions += "default"
+    productFlavors {
+        create("dev") {
+            dimension = "default"
+            applicationIdSuffix = ".dev"
+            versionNameSuffix = "-dev"
+            manifestPlaceholders["appName"] = "LocalMind_dev"
+        }
+    }
+
+    defaultConfig {
+        manifestPlaceholders["appName"] = "LocalMind"
+    }
+
+    signingConfigs {
         create("release") {
             keyAlias = keystoreProperties["keyAlias"] as String
             keyPassword = keystoreProperties["keyPassword"] as String
@@ -52,6 +66,9 @@ android {
 
 
    buildTypes {
+        debug {
+            signingConfig = signingConfigs.getByName("release")
+        }
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.

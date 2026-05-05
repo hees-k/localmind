@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 class GitHubRepoCard extends StatelessWidget {
   const GitHubRepoCard({super.key});
 
-  final String repoUrl = 'https://github.com/abdulmominsakib/localmind';
+  final String repoUrl = 'https://github.com/hees-k/localmind';
 
   Future<void> _launchUrl() async {
     final Uri url = Uri.parse(repoUrl);

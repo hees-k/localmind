@@ -48,7 +48,13 @@ app.*.map.json
 .fvm/
 playstore_keys
 .agent/
-.claude/
 .dart_skills/
 private/
 plans/
+
+.codex
+.claude
+
+claude_local.sh
+codex_local.shclaude_local.sh
+codex_local.sh

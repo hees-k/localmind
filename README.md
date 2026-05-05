@@ -8,10 +8,7 @@ LocalMind is a premium Flutter mobile application designed to provide a beautifu
 ![LocalMind Screenshot](docs/app_screenshots.webp)
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=pro.momin.localmind">
-    <img src="docs/playstore_download_button.webp" width="200" />
-  </a>
-  <a href="https://github.com/abdulmominsakib/localmind/releases">
+  <a href="https://github.com/hees-k/localmind/releases">
     <img src="docs/github_download_button.webp" width="200" />
   </a>
 </p>

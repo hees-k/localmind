@@ -154,9 +154,8 @@ class _ChatInputBarState extends ConsumerState<ChatInputBar>
         (_controller.text.trim().isNotEmpty || _attachedFiles.isNotEmpty) &&
         !widget.isStreaming;
 
-    return SafeArea(
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
         decoration: BoxDecoration(
           color: isDark ? const Color(0xFF1C1C1C) : Colors.white,
@@ -304,7 +303,6 @@ class _ChatInputBarState extends ConsumerState<ChatInputBar>
             ),
           ],
         ),
-      ),
     );
   }
 }
